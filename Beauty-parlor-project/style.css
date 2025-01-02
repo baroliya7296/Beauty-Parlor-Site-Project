@@ -1,0 +1,548 @@
+body{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0 auto;
+    overflow-y: scroll;
+}
+p{
+    font-size: 19px;
+    font-weight: 400;
+    font-family: 'Times New Roman', Times, serif;
+}
+.header img{
+    height: 100px;
+    width: 200px;
+    object-fit: cover;
+}
+.header{
+    display: flex;
+    background-color: rgb(124, 33, 72);
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+    /* width: 100vw; */
+}
+.dropdown-menu li a{
+    color:rgb(124, 33, 72);
+}
+.dropdown-menu li a:hover{
+    background-color: rgb(124, 33, 72);
+    color: white;
+}
+.navbar a{
+    text-decoration: none;
+    padding: 0 10px;
+    transition: 300ms all;
+    color:white;
+    font-weight: 600;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.navbar{
+    align-items: center;
+    margin: auto;
+    display: flex;
+    gap: 30px;
+    font-weight: 600;
+    padding: 0 10PX;
+}
+.navbar a:hover{
+    background:white;
+    color:rgb(124, 33, 72);
+    border-radius: 24px;
+}
+.carousel-item img{ 
+    width: 100vw;
+    height: 400px;  
+    margin-top: 50px;
+}
+.bg-img{
+    width: 100vw;
+    margin-top: 20%;
+}
+.content{
+    text-align: center;
+    margin-top: 40px;
+}
+.content h3{
+    margin: 50px auto;
+    font-size: 30px;
+    background-color: rgb(124, 33, 72);
+    width: fit-content;
+    padding: 10px;
+    font-weight: 700;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 24px;
+}
+.info{
+    display: flex;
+    justify-content:center;
+    gap: 30px;
+    margin: 30px auto;
+}
+.info-details img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: all 300ms;
+    animation: floatImage 4s ease-in-out infinite;
+}
+@keyframes floatImage {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-15px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+    
+}
+.info-details img:hover{
+    box-shadow: rgb(124, 33, 72) 0px 5px 15px;
+}
+#Categories{
+    box-shadow: black 0px 5px 15px;
+    max-width: 90%;
+    margin:0 auto;
+    border-radius: 60px;
+    background-color: rgb(224, 218, 218);
+}
+#Categories .content{
+padding: 10px;
+}
+#content h2{ 
+    margin: 50px auto;
+    background-color: rgb(124, 33, 72);
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    width: 50%;
+    color: white;
+    font-family: "PT Serif", serif;
+    font-weight: 600;
+}
+.classes .classes-info{
+   display: flex;
+   justify-content: center; 
+   flex-direction: column;
+}
+.classes-details img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 5px solid rgb(124, 33, 72);
+    margin: 20px 0;
+    transition:all 300ms;
+
+    animation: floatImage 4s ease-in-out infinite;
+}
+ .classes{
+    display: flex;
+   justify-content: center;
+}
+.classes{
+    display: grid;
+    grid-template-columns: repeat(4,200px);
+    justify-content: space-evenly;
+}
+.classes-details h4{
+    text-align: center;
+    border: 3px solid rgb(124, 33, 72);
+    border-radius: 15px;
+    transition: all 300ms;
+    padding: 20px;
+}
+.classes-details:hover{
+    img{
+        box-shadow: rgb(124, 33, 72) 0px 5px 15px;
+        filter: brightness(40%);
+    }
+    h4{
+        background-color:rgb(124, 33, 72);
+        color: white;
+        font-weight: 600;
+    }
+}
+#content input{
+   width: 80%;
+   padding: 15px;
+   border: 1px solid rgb(124, 33, 72);
+   border-radius: 36px;
+   display: flex;
+   box-shadow: rgb(124, 33, 72) 0px 5px 15px;
+   margin-bottom:30px;
+   justify-content: center;
+   margin-left:10%;
+   background-color: rgb(224, 218, 218);
+}
+#about{
+    box-shadow: black 0px 5px 15px;
+    max-width: 90%;
+    margin: 0 auto;
+    border-radius: 60px;
+}
+.about-section{
+    display: flex;
+    justify-content: center;
+    margin:5% 50px;
+    gap: 70px;
+    box-sizing: border-box;
+}
+.about-section img{
+    height: 800px;
+    width: fit-content;
+    border-radius: 50px;
+    box-shadow: black 0px 5px 15px;
+    margin: 5% 10px;
+}
+.about-info{
+    max-width: 500px;
+    margin: 50px 0;
+}
+.about-info p i{
+    background-color: rgb(124, 33, 72);
+    color: white;
+    border-radius: 50%;
+    padding: 2px;
+    margin-right: 10px;
+}
+.about-info h1{
+    font-weight: 600;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* margin: 20px; */
+    font-size: 30px;
+}
+.about-info h2{
+    margin: 0;
+    font-weight: 600;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.about-info a button{
+    padding: 5px;
+    width: 230px;
+    color: white;
+    background-color: rgb(124, 33, 72);
+    border: 1px solid white;
+    border-radius: 24px;
+    font-weight: 600;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: none;
+    margin-left: 30%;
+    margin-top: 20px;
+
+    transition: all 300ms;
+}
+.about-info a button:hover{
+    box-shadow: rgb(201, 35, 76) 0px 5px 15px;
+}
+.about-info a button i{
+    background-color: white;
+    padding: 10px;
+    border-radius: 50%;
+    color:rgb(124, 33, 72);
+    margin-left: 10px;
+}
+.about{
+    box-shadow: black 0px 5px 15px;
+    max-width: 90%;
+    margin:0 auto;
+    border-radius: 60px;
+}
+
+.about-section{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#therapy h1{
+    text-align: center;
+    color: rgb(124, 33, 72);
+    font-weight: 600;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 50px auto;
+}
+#therapy .detail{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+#therapy .detail img{
+    width: 600px;
+    border-radius: 50px;
+    box-shadow: black 0px 5px 15px;
+}
+.therapy-info i{
+    background-color: rgb(124, 33, 72);
+    color: white;
+    border-radius: 50%;
+    padding: 2px;
+    margin-right: 10px;
+}
+.therapy-info h4{
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#therapy .beauty-detail{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin-top: 10%;
+    gap: 20px;
+}
+#therapy .beauty-detail img{
+    width: 600px;
+    border-radius: 50px;
+    box-shadow: black 0px 5px 15px;
+}
+#flush-collapseOne .accordion-body iframe{
+    width: 100%;
+    height: 70vh;
+}
+.beauty-detail h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+}
+.therapy-info a button{
+    padding: 5px;
+    color: white;
+    width: 230px;
+    background-color: rgb(124, 33, 72);
+    border: 1px solid white;
+    border-radius: 24px;
+    font-weight: 600;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: none;
+    margin-left: 30%;
+    margin-top: 20px;
+    transition: all 300ms;
+}
+.therapy-info a button:hover{
+    box-shadow: rgb(201, 35, 76) 0px 5px 15px;
+}
+.therapy-info a button i{
+    background-color: white;
+    padding: 10px;
+    border-radius: 50%;
+    color:rgb(124, 33, 72);
+    margin-left: 10px;
+}
+#career{
+    box-shadow: black 0px 5px 15px;
+    max-width: 90%;
+    margin:0 auto;
+    border-radius: 60px;
+    margin-top: 8%;
+    padding: 5px;
+}
+.about-career{
+    margin: 50px;
+}
+.about-career h1{
+    margin-top: 50px auto;
+    font-weight: 600;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.about-career h5{
+    max-width: 50%;
+    margin: 20px 0;
+    font-weight: 600;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.about-career p i{
+    background-color: rgb(124, 33, 72);
+    color: white;
+    border-radius: 50%;
+    padding: 2px;
+    margin-right: 10px;
+}
+#courses{
+    width: 95vw;
+    text-align: center;
+}
+#courses .accordion-button{
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#courses .accordion-button i{
+    margin-right: 30px;
+    font-size: 40px;
+    color: rgb(124, 33, 72);
+}
+#courses h1{
+    text-align: center;
+    margin: 50px auto;
+    font-weight: 600;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#courses .beauty-courses {
+max-width: 90%;
+margin-left: 50px;
+}
+.accordion-body{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    max-width: 50%;
+    margin:20px  25%;
+    border: 2px solid transparent;
+    border-radius: 12px;
+    background-color: rgb(124, 33, 72);
+    color: white;
+    max-height: 70px;
+}
+.accordion-body h3{
+    font-weight: 700;
+    font-size: 20px;
+}
+.accordion-body span{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.accordion-item .accordion-header{
+    margin: 10px 5%;
+}
+#contact{
+    margin: 50px auto;
+}
+#about-contact{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+    text-align: center;
+    margin:50px auto;
+    width: 95vw;
+}
+.accordion-button h5 {
+    margin-right: 10px ; 
+    padding:10px 20px;
+    border-radius: 8px;
+    background-color: darkgray; 
+}
+#about-contact .accordion-body{
+    display: block;
+    margin:20px  25%;
+    max-height: 90px;
+    max-width: 50%;
+    margin:20px  auto;
+    max-height: 100vh;
+}
+#about-contact .accordion-body:nth-child(1){
+  text-align: start;
+}
+#footer{
+    background-color: rgb(124, 33, 72);
+    margin: 80px 60px;
+    border-radius: 50px;
+}
+.footer{
+    display: flex;
+}
+.footer img{
+    width: 600px;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 50px;
+
+}
+.footer .form{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 20px;
+}
+.footer .form h1{
+    margin:50px auto;
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    font-weight: 600;
+}
+.footer .form input{
+    padding: 10px;
+    border-radius: 24px;
+    outline: none;
+    border:1px solid white;
+    background-color: rgb(124, 33, 72);
+    color: white;
+    width: 300px;
+}
+.footer .form textarea{
+    padding: 10px;
+    border-radius: 24px;
+    outline: none;
+    border: 1px solid white;
+    background-color: rgb(124, 33, 72);
+    color: white;
+}
+.form button{
+    width: 150px;
+    padding: 6px;
+    border-radius: 24px;
+    outline: none;
+    border: 2px solid transparent;
+    color: rgb(124, 33, 72);
+    font-weight: 600;
+}
+.form button i{
+    background-color:rgb(124, 33, 72);
+    padding: 10px;
+    border-radius: 50%;
+    color:white;
+    margin-left: 10px;
+}
+#contact-section{
+    display: flex;
+    margin: 50px 50px;
+    justify-content: space-around;
+}
+#contact-section h5{
+    margin: 0;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 400;
+}
+#contact-section h5 i{
+    margin-right: 10px;
+    font-size: 20px;
+}
+#contact-section h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+}
+#contact-section h2 img{
+    height: 20px;
+    width: 40px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.office-india h5 a{
+    text-decoration: none;
+    color: black;
+}
+#footer-section{
+    background-color: rgb(209, 204, 204);
+    padding-top: 10px;
+    width: 115%;
+}
+.footer-text{
+    display: flex;
+    margin: 20px 0 -10px 0 ;
+    justify-content: center;
+    background-color: rgb(124, 33, 72);
+    color: white;
+}
+.footer-text p{
+    font-size: 20px;
+    font-weight: 600;
+}
+.footer-text a{
+    font-size: 25px;
+}

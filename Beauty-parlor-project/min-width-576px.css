@@ -1,0 +1,15 @@
+@media (min-width:576px) {
+      .bg-img img{
+        margin-top:-50px;
+      }
+      .info{
+        margin: 30px 0 0 20px;
+        justify-content: center;
+      }
+      .about-section img{
+        margin: 70px 0 0 80px;
+      }
+      #therapy .detail img{
+        margin-left: 15%;
+      }
+}

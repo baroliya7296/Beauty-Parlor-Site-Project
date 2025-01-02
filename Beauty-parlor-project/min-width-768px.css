@@ -1,0 +1,129 @@
+@media (min-width:768px) {
+    .carousel-item img{
+        display: inline-block !important;
+    }
+    .bg-img{
+        display: none;
+    }
+    #content h2{
+        width: fit-content;
+        text-align: center;
+        margin: 10px auto;
+    }
+    .content h3{
+      margin: 0;
+      margin-left: 36%;
+    }
+    .classes{
+        display: grid;
+        grid-template-columns: repeat(3,200px);
+        justify-content: space-evenly;
+        gap: 10px;
+        margin-left: 0;
+    }
+    .info{
+      display: grid;
+      grid-template-columns: repeat(3,150px);
+      justify-content: center;
+      margin: 30px 25px;
+    }
+   .about-section h1{
+    font-size: 30px;
+    margin-top: 50px;
+    padding: 10px;
+   }
+   .about-section img{
+    display: none;
+   }
+   .about-info p{
+    font-size: 20px;
+    width: 85vw;
+    margin-right: 20px;
+   }
+   .about-info{
+    margin: 0;
+   }
+   .about-section{
+    margin: 0 50px;
+   }
+   #therapy .detail img{
+    margin-left: 150px;
+   }
+   #therapy .detail{
+    margin-left: 50px;
+   }
+   .therapy-info p{
+    font-size: 20px;
+   }
+   .beauty-detail .therapy-info h4{
+    margin: 20px 0 15px -50px;
+    text-align: center;
+   }
+   #therapy .beauty-detail{
+    margin-left: 50px;
+   }
+   #therapy .beauty-detail img{
+    margin-left: 25%;
+    height: 300px;
+    object-fit: cover;
+   }
+   #courses h1{
+    margin: 0;
+   }
+   .accordion-item{
+    margin-left: 10px;
+    width: 90%;
+   }
+   #about-contact h1{
+    margin: 0;
+    font-weight: 600;
+   }
+   #about-contact p{
+    margin: 0;
+    font-size: 20px;
+    margin-top: 10px;
+   }
+   .footer img{
+    margin-top: 50px;
+    height: 400px;
+    width: 300px;
+   }
+   #footer{
+    margin: 0 30px;
+   }
+   .footer{
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+  }
+  .form button{
+    margin-bottom: 20px;
+  }
+  .footer .form{
+    margin-left: 20px;
+    width: 85%;
+  }
+  .footer .form h1{
+    color: black;
+    margin: 0;
+  }
+  .courses{
+    display: inline;
+  }
+  .quick-links{
+    margin: 0 -20px 0 0;
+  }
+  #contact-section {
+    display: grid;
+    padding: 0;
+    grid-template-columns: repeat(4, 200px);
+    justify-content: space-evenly;
+    /* width: 100vw; */
+    gap: 0px;
+    margin: 10px 0 50px 0;
+  }
+  #footer-section{
+    background-color: rgb(209, 204, 204);
+    width: 100%;
+  }
+}

@@ -1,0 +1,72 @@
+@media (min-width:1200px) {
+    .navbar{
+        margin-left: 5%;
+    }
+    .about-section img {
+        width: 50%;
+        margin-left: 40px;
+    }
+    .info-details:nth-child(6){
+        display: inline;
+    }
+    .classes-details:nth-child(2){
+        display:inline;
+    }
+    .classes-details:nth-child(4){
+        display: inline;
+    }
+    .classes {
+        display: grid;
+        grid-template-columns: repeat(4, 200px);
+        justify-content: space-evenly;
+        gap: 10px;
+        margin-left: 0;
+    }
+    #therapy .detail img {
+        width: 45%;
+        margin-left: 30px;
+    }
+    #therapy .beauty-detail img{
+        width: 40%;
+    }
+    #about{
+        box-shadow: black 0px 5px 15px;
+        max-width: 90%;
+        padding:0 10rem 50px 50px;
+        margin: 50px auto;
+    }
+    .about-info {
+        margin-left: 20px;
+    }
+    .about-career h1{
+        margin: 50px auto;
+        text-align: center;
+    }
+    .about-section h1{
+        margin: 70px 0 30px 0;
+    }
+    .footer img{
+        width: 40%;
+    }
+    .footer .form{
+        width: 40%;
+        margin-left: 50px;
+    }
+    .footer{
+        margin-left:50px;
+    }
+    #footer-section{
+        margin-top: 30px;
+    }
+    .office-canada{
+        margin-right: 0;
+    }
+    #contact-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 0;
+        padding: 20px;
+    }
+    
+}
